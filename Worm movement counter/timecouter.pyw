@@ -12,8 +12,8 @@ import os
 
 root = Tk()
 #root.option_readfile('optionDB')
-root.option_add('*font', (u'simsung', '10', ''))#verdana£¬ courier, simsung
-root.title(u'Worm Movement Counter by Rui, 2004-11-7')
+root.option_add('*font', (u'simsung', '10', ''))#verdanaÂ£Â¬ courier, simsung
+root.title(u'Worm Movement Counter by Rui Wang, 2004-11-7')
 
 
 # Data structure
@@ -289,7 +289,7 @@ def save2File():
 
 def beforeQuit(event):
 
-    dialog = Pmw.Dialog(root, buttons=('OK','Cancel'), defaultbutton='OK', title=u'Saving reminder£¡')
+    dialog = Pmw.Dialog(root, buttons=('OK','Cancel'), defaultbutton='OK', title=u'Saving reminderÂ£Â¡')
     Label(dialog.interior(), text=u'Choose a file name to save the current recording before exit,.csv not required\nCurrent folder is:')\
                              .pack(side=TOP, expand=YES, fill=BOTH, padx=5, pady=5)
     Label(dialog.interior(), text=unicode(os.getcwd(), encoding))\
